@@ -1,0 +1,9 @@
+virtualenv -p python3 venv
+
+source venv/bin/activate
+
+easy_install-3.7 bs4
+
+easy_install-3.7 requests
+
+easy_install-3.7 xlsxwriter
