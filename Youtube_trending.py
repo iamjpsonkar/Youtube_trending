@@ -13,7 +13,7 @@ ws_name.write(0,2,'Link')
 
 
 source=requests.get("https://www.youtube.com/feed/trending").text
-soup = BeautifulSoup(source, 'lxml')
+soup = BeautifulSoup(source, 'html.parser')
 
 count=1
 for content in soup.find_all('div', class_= "yt-lockup-content"):
