@@ -7,7 +7,7 @@ https://gitpod.io/#github.com/iamjpsonkar/Youtube_trending
 
 
 
-#To run the application use these commands in gitpod linux terminal
+#To run the application use these commands in terminal
 
 virtualenv -p python3 venv
 
