@@ -7,3 +7,5 @@ easy_install-3.7 bs4
 easy_install-3.7 requests
 
 easy_install-3.7 xlsxwriter
+
+python3 Youtube_trending.py
