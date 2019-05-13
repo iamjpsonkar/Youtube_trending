@@ -1,3 +1,22 @@
+import os
+import datetime
+
+
+if os.path.isfile("log.txt") != True:
+    os.system("source venv/bin/activate")
+    os.system("easy_install-3.7 bs4")
+    os.system("easy_install-3.7 requests")
+    os.system("easy_install-3.7 xlsxwriter")
+    f = open("log.txt", 'w')
+    f.write("==> setup run "+str(datetime.datetime.now())+"\n")
+    f.close()
+
+
+f = open("log.txt",'a')
+f.write("==> app run "+str(datetime.datetime.now())+"\n")
+f.close()
+
+
 from bs4 import BeautifulSoup
 from xlsxwriter import Workbook
 import requests
